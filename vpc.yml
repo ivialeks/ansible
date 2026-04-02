@@ -1,0 +1,45 @@
+- name: Choco
+  hosts: windows, windows1
+  gather_facts: False
+
+  collections:
+  - chocolatey.chocolatey
+
+  tasks:
+
+  - name: install googlechrome --ignore-checksums
+    win_chocolatey:
+      name: googlechrome
+#      version: '116.0.5845.97'
+#      state: present
+      ignore_checksums: yes
+
+  - name: install adobereader
+    win_chocolatey:
+      name: adobereader
+      state: present
+
+
+  - name: install 7zip
+    win_chocolatey:
+      name: 7zip
+      state: present
+
+
+  - name: install tightvnc
+    win_chocolatey:
+      name: tightvnc
+      state: present
+
+
+  - name: install totalcommander
+    win_chocolatey:
+      name: totalcommander
+      state: present
+
+
+  - name: install rocketchat
+    win_chocolatey:
+      name: rocketchat
+      state: present
+
