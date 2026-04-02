@@ -1,0 +1,3 @@
+# requirements.yml
+roles:
+  - name: ansibleguy.sw_semaphore
