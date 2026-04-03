@@ -1,4 +1,3 @@
-tasks:
  - name: Find all backup files
    ansible.builtin.find:
      paths: //10.10.3.101/volume1/ActiveBackupforBusiness/databases/postgres-parus8/ActiveBackup_2026-04-03_030015/home/usr/backups
