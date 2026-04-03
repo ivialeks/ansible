@@ -1,3 +1,3 @@
-- name: Найти самый последний бэкап
+- name: findlastbackup
   shell: "ls -t /volume1/ActiveBackupforBusiness/databases/postgres-parus8/ActiveBackup_2026-04-03_030015/home/usr/backups/*.gz | head -n 1"
   register: latest_backup
