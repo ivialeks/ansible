@@ -1,4 +1,5 @@
 - name: Find baks
+  hosts: 10.10.3.101
   tasks: 
     - name: Find all backup files
       ansible.builtin.find:
