@@ -7,6 +7,3 @@
 - name: Select the latest backup
   ansible.builtin.set_fact:
     latest_backup: "{{ (found_backups.files | sort(attribute='mtime') | last).path }}"
-	
-
-	
